@@ -4,15 +4,13 @@
       project = var.project
 
       config {
-        node_count = 2 # Example: Number of GKE nodes for the environment
+        node_count = 2 
         node_config {
-          machine_type = "n1-standard-1" # Example: Machine type for GKE nodes
-          disk_size_gb = 10 # Example: Disk size for GKE nodes
+          machine_type = "n1-standard-1"
+          disk_size_gb = 10 
         }
         software_config {
           image_version = "composer-2-airflow-2"
-          # Add other software configurations like PyPI packages, environment variables, etc.
         }
-        # Add other configuration options as needed, e.g., networking, private IP settings
       }
     }
