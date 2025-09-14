@@ -10,7 +10,7 @@
           disk_size_gb = 10
         }
         software_config {
-          image_version = "composer-2-airflow-2"
+          image_version = "composer-1-airflow-1"
         }
       }
     }
