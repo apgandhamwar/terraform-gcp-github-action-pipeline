@@ -4,5 +4,5 @@ resource "google_storage_bucket" "raw" {
   force_destroy = false
   uniform_bucket_level_access = true
   location = var.region
-  labels = "test-bucket"
+  labels = local.labels
 }
