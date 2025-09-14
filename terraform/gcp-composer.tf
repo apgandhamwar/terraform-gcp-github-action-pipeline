@@ -1,10 +1,10 @@
     resource "google_composer_environment" "composer_env" {
-      name    = "your-composer-environment-name"
-      region  = "your-gcp-region" # Must match the provider region or be specified
-      project = "your-gcp-project-id"
+      name    = "test-composer-anup"
+      region  = var.region
+      project = var.project
 
       config {
-        node_count = 3 # Example: Number of GKE nodes for the environment
+        node_count = 2 # Example: Number of GKE nodes for the environment
         node_config {
           machine_type = "n1-standard-1" # Example: Machine type for GKE nodes
           disk_size_gb = 20 # Example: Disk size for GKE nodes
