@@ -6,6 +6,6 @@ terraform {
 }
 
 provider "google" {
-  project = var.project
-  region = var.region
+  project = vars.project
+  region = vars.region
 }
